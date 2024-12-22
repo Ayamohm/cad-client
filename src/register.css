@@ -1,0 +1,193 @@
+.form {
+    width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.form h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form p {
+    color: #dbdbdb;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.input-r {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-r input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #e2d8d890;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+}
+
+.input-r input::placeholder {
+    color: #ffffff5e;
+    font-size: 13px;
+}
+
+form .name-box {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+.hobby-section .input-r {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-hobby-btn {
+    height: 40px;
+    background: #06602f;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-hobby-btn:hover {
+    background: #078d43;
+}
+
+.hobbies-list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hobbies-list ul li button {
+    background: #06602f;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hobbies-list ul li button:hover {
+    background: #078d43;
+}
+
+.gender-box {
+    margin-top: 20px;
+}
+
+.gender-select {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.gender input {
+    cursor: pointer;
+}
+
+.reg-btn {
+    width: 100%;
+    height: 45px;
+    background: #06602f;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.reg-btn:hover {
+    background: #078d43;
+}
+
+.login-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-link p{
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
+
+.error{
+    top: 100%;
+    bottom: 5px;
+    left: 2px;
+    color: red;
+    font-size: 12px;
+}
+.input-r select {
+    width: 100%;
+    height: 45px;
+    background: rgba(30, 30, 30, 0.5);
+    color: #ffffff; 
+    border: 2px solid rgba(226, 216, 216, 0.56); 
+    border-radius: 10px; 
+    padding: 10px; 
+    cursor: pointer; 
+    font-size: 14px; 
+}
+
+.input-r select:focus {
+    border-color: #06602f; 
+    box-shadow: 0 0 5px rgba(6, 96, 47, 0.5); 
+}
+
+.input-r select option {
+    background: #1e1e1e; 
+    color: #ffffff; 
+    padding: 5px; 
+    cursor: pointer; 
+}
+
+
+
+
+@media (max-width: 510px) {
+    .form {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .name-box {
+        flex-direction: column;
+    }
+
+    .gender-select {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
